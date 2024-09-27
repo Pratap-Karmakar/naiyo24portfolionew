@@ -39,7 +39,7 @@ const ProjectsBtn = () => {
       {/* Icon */}
       <MdConnectWithoutContact className="relative z-10 text-2xl" />
       {/* Text */}
-      <span className="relative z-10">Let's Connect</span>
+      <span className="relative z-10">Let&#39;s Connect</span>
     </motion.button>
   );
 };
