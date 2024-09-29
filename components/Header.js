@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import logo from '../public/Naiyo24.png'
+import logo from '../public/naiyo24.png'
 import {motion} from 'framer-motion'
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
           }}>
 
         <Link href={'/'}>
-          <Image src={logo} className='w-16 h-16'/>
+          <Image src={logo} alt='something' className='w-16 h-16'/>
         </Link>
         </motion.div>
       </div>
