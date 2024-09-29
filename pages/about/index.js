@@ -35,7 +35,7 @@ export default function About() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >
-        At NAIYO24 PRIVATE LIMITED, we're committed to transforming your digital dreams into reality. As a leading
+        At NAIYO24 PRIVATE LIMITED, we&apos;re committed to transforming your digital dreams into reality. As a leading
         provider of online application and website development services, our mission is to deliver cutting-edge
         solutions that propel your business forward in the digital world.
       </motion.p>

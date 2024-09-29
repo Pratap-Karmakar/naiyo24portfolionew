@@ -11,7 +11,7 @@ const sora = Sora({
 const Layout = ({children}) => {
   return <div className={`page bg-black text-[#FFA700] bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
     <Nav/>
-    <Header/>
+    {/* <Header/> */}
     {children}
   </div>;
 };

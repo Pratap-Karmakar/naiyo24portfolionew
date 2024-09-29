@@ -15,7 +15,7 @@ const Contact = () => {
             exit='hidden'
             className='text-4xl text-center mb-12'
           >
-            Let's <span className='text-purple-400'>Contact</span>
+            Let&apos;s <span className='text-purple-400'>Contact</span>
           </motion.h2>
 
           {/* Form */}
@@ -37,7 +37,7 @@ const Contact = () => {
             <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-purple-400 group relative'>
               {/* Button text */}
               <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-                Let's Talk
+                Let&apos;s Talk
               </span>
 
               {/* Icon */}
