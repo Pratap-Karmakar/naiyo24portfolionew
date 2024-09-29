@@ -3,10 +3,11 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Image from "next/image";
 import avatar from "../public/avatar.png";
 import ParticlesContainer from "../components/ParticlesContainer";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen flex flex-col xl:flex-row items-center md:mx-16 xl:mx-24 mx-auto md:gap-10">
+    <div className="relative min-h-screen flex flex-col xl:flex-row items-center justify-center md:mx-16 xl:mx-24 mx-auto md:gap-10">
       {/* Particles Background */}
       <ParticlesContainer />
 
@@ -15,7 +16,7 @@ const Home = () => {
         <div className="text-center xl:text-left">
           <motion.h1
             className="text-lg py-3"
-            initial={{ x: "+100vw", opacity: 0 }} // Start from off-screen to the left
+            initial={{ x: "+100vw", opacity: 0 }} // Start from off-screen to the right
             animate={{ x: 0, opacity: 1 }} // Animate to the normal position
             transition={{
               type: "spring",
@@ -45,7 +46,7 @@ const Home = () => {
             </h1>
           </motion.div>
           <motion.div
-            initial={{ x: "+100vw", opacity: 0 }} // Start from off-screen to the left
+            initial={{ x: "+100vw", opacity: 0 }} // Start from off-screen to the right
             animate={{ x: 0, opacity: 1 }} // Animate to the normal position
             transition={{
               type: "spring",
@@ -61,7 +62,7 @@ const Home = () => {
 
           {/* Button */}
           <div className="flex justify-center md:justify-start">
-            <ProjectsBtn />
+            <Link href='/contact'><ProjectsBtn /></Link>
           </div>
         </div>
       </div>
@@ -79,13 +80,16 @@ const Home = () => {
             duration: 0.8, // Adjust duration for smoother effect
             delay: 2.5,
           }}
-          className="relative z-10 mt-[-20px] md:mt-0 w-full max-w-md xl:max-w-lg" // Adjust width for responsiveness
+          className="relative z-10 flex items-center justify-center"
         >
+          {/* Shadow Container */}
+          <div className="absolute w-[300px] h-[300px] md:w-[350px] md:h-[350px] bg-gradient-to-b from-black/30 via-black/40 to-[#F7AB0A]/10 rounded-full shadow-2xl"></div>
+
+          {/* Avatar Image */}
           <Image
             src={avatar}
-            alt="User Experience"
-            className="w-full h-auto object-contain"
-            layout="responsive"
+            alt="avatar"
+            className="relative w-[250px] h-[250px] md:w-[320px] md:h-[320px] object-cover rounded-full"
             priority
           />
         </motion.div>
